@@ -108,7 +108,7 @@ update_btn.grid(row=2, column=2)
 clear_btn = Button(app, text='Очистить', width=12, command=clear_text)
 clear_btn.grid(row=2, column=3)
 
-app.title('Part Manager')
+app.title('Крутая приложуха')
 app.geometry('700x350')
 
 # Populate data
