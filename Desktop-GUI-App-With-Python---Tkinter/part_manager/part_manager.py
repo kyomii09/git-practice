@@ -57,28 +57,28 @@ app = Tk()
 
 # Part
 part_text = StringVar()
-part_label = Label(app, text='Part Name', font=('bold', 14), pady=20)
+part_label = Label(app, text='Название', font=('bold', 14), pady=20)
 part_label.grid(row=0, column=0, sticky=W)
 part_entry = Entry(app, textvariable=part_text)
 part_entry.grid(row=0, column=1)
 
 # Customer
 customer_text = StringVar()
-customer_label = Label(app, text='Customer', font=('bold', 14))
+customer_label = Label(app, text='Клиент', font=('bold', 14))
 customer_label.grid(row=0, column=2, sticky=W)
 customer_entry = Entry(app, textvariable=customer_text)
 customer_entry.grid(row=0, column=3)
 
 # Retailer
 retailer_text = StringVar()
-retailer_label = Label(app, text='Retailer', font=('bold', 14))
+retailer_label = Label(app, text='Поставщик', font=('bold', 14))
 retailer_label.grid(row=1, column=0, sticky=W)
 retailer_entry = Entry(app, textvariable=retailer_text)
 retailer_entry.grid(row=1, column=1)
 
 # Price
 price_text = StringVar()
-price_label = Label(app, text='Price', font=('bold', 14))
+price_label = Label(app, text='Цена', font=('bold', 14))
 price_label.grid(row=1, column=2, sticky=W)
 price_entry = Entry(app, textvariable=price_text)
 price_entry.grid(row=1, column=3)
@@ -96,16 +96,16 @@ scrollbar.configure(command=parts_list.yview)
 parts_list.bind('<<ListboxSelect>>', select_item)
 
 # Buttons
-add_btn = Button(app, text='Add Part', width=12, command=add_item)
+add_btn = Button(app, text='Добавить', width=12, command=add_item)
 add_btn.grid(row=2, column=0, pady=20)
 
-remove_btn = Button(app, text='Remove Part', width=12, command=remove_item)
+remove_btn = Button(app, text='Удалить', width=12, command=remove_item)
 remove_btn.grid(row=2, column=1)
 
-update_btn = Button(app, text='Update Part', width=12, command=update_item)
+update_btn = Button(app, text='Обновить', width=12, command=update_item)
 update_btn.grid(row=2, column=2)
 
-clear_btn = Button(app, text='Clear Part', width=12, command=clear_text)
+clear_btn = Button(app, text='Очистить', width=12, command=clear_text)
 clear_btn.grid(row=2, column=3)
 
 app.title('Part Manager')
